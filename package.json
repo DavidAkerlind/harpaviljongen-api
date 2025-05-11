@@ -1,0 +1,25 @@
+{
+  "name": "harpaviljongen-api",
+  "version": "1.0.0",
+  "description": "REST API for harpaviljongen resturant with menu data and opening houres",
+  "homepage": "https://github.com/DavidAkerlind/harpaviljongen-api#readme",
+  "bugs": {
+    "url": "https://github.com/DavidAkerlind/harpaviljongen-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidAkerlind/harpaviljongen-api.git"
+  },
+  "license": "ISC",
+  "author": "David Åkerlind",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
