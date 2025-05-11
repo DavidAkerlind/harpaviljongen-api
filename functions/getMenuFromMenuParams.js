@@ -3,8 +3,11 @@ export const getMenuFromMenuParams = (data, paramsObj) => {
 
 	data = data.menus;
 
+	console.log(data);
+	console.log(menuId);
+
 	if (menuId) {
-		data = data.filter((menu) => (menu.id = menuId));
+		data = data.filter((menu) => menu.id === menuId);
 	}
 	return data;
 };
