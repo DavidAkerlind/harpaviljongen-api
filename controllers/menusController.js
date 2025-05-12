@@ -38,7 +38,7 @@ export const deleteMenu = (req, res) => {
 		res.json(
 			constructResObj(
 				200,
-				`Menu with id '${menuId}' successfully deleted`,
+				`Menu with id '${menuId}' deleted successfully`,
 				true,
 				data.menus
 			)
@@ -47,6 +47,40 @@ export const deleteMenu = (req, res) => {
 		res.status(400);
 		res.json(
 			constructResObj(400, `No menus found with id '${menuId}`, false)
+		);
+	}
+};
+
+export const updateMenu = (req, res) => {
+	const { menuId, field } = req.params;
+	const { value } = req.body;
+	const allowedFields = ['title', 'description', 'type', 'price'];
+	if (allowedFields.includes(field)) {
+		const menu = data.menus.find((m) => m.id === menuId);
+		if (menu) {
+			menu[field] = value;
+			res.json(
+				constructResObj(
+					200,
+					`Field '${field}' in menu '${menuId}' updated successfully`,
+					true,
+					menu
+				)
+			);
+		} else {
+			res.status(400);
+			res.json(
+				constructResObj(400, `No menus found with id '${menuId}`, false)
+			);
+		}
+	} else {
+		res.status(400);
+		res.json(
+			constructResObj(
+				400,
+				`Invalid field '${field}', allowed fields: '${allowedFields}'`,
+				false
+			)
 		);
 	}
 };
