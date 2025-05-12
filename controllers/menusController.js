@@ -46,7 +46,7 @@ export const deleteMenu = (req, res) => {
 	} else {
 		res.status(400);
 		res.json(
-			constructResObj(400, `No menus found with id '${menuId}`, false)
+			constructResObj(400, `No menus found with id: ${menuId}`, false)
 		);
 	}
 };

@@ -188,5 +188,105 @@ export const data = {
 				},
 			],
 		},
+		{
+			id: 'menu-bubbels',
+			title: 'BUBBLOR',
+			description: '',
+			type: 'small',
+			price: '',
+			items: [
+				{
+					id: 1,
+					title: 'Prosseco',
+					description: '',
+					price: 120,
+				},
+				{
+					id: 2,
+					title: 'Deutz Classic',
+					description: '',
+					price: 150,
+				},
+				{
+					id: 3,
+					title: 'Deutz 2018',
+					description: '',
+					price: 200,
+				},
+				{
+					id: 4,
+					title: 'Deutz Rosé',
+					description: '',
+					price: 200,
+				},
+				{
+					id: 5,
+					title: 'Amour',
+					description: '',
+					price: 350,
+				},
+				{
+					id: 6,
+					title: 'Amour Rosé',
+					description: '',
+					price: 375,
+				},
+			],
+		},
+		{
+			id: 'menu-coctails',
+			title: 'DRINKAR',
+			description: '',
+			type: 'small',
+			price: '',
+			items: [
+				{
+					id: 1,
+					title: 'Tosterup Sprits',
+					description: '',
+					price: 150,
+				},
+				{
+					id: 2,
+					title: 'Negroni',
+					description: '',
+					price: 150,
+				},
+				{
+					id: 3,
+					title: 'Dry martini',
+					description: '',
+					price: 150,
+				},
+			],
+		},
+		{
+			id: 'menu-beer',
+			title: 'ÖL',
+			description: '',
+			type: 'small',
+			price: '',
+			items: [
+				{
+					id: 1,
+					title: 'Hof',
+					description: '',
+					price: 75,
+				},
+				{
+					id: 2,
+					title: '1664 Blanc',
+					description: '',
+					price: 80,
+				},
+
+				{
+					id: 3,
+					title: 'Norrlandsljus',
+					description: '',
+					price: 80,
+				},
+			],
+		},
 	],
 };
