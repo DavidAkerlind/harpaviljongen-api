@@ -17,7 +17,7 @@ export const data = {
 			price: 165,
 			items: [
 				{
-					id: 'wine-1',
+					id: 1,
 					title: 'Rioja Blanco Las Laventadas',
 					producer: 'Javier San Pedro',
 					description:
@@ -25,7 +25,7 @@ export const data = {
 					price: '',
 				},
 				{
-					id: 'wine-2',
+					id: 2,
 					title: 'Lux Fortis Cabernet Sauvignon',
 					producer: 'Famille Fabre',
 					description:
@@ -33,7 +33,7 @@ export const data = {
 					price: '',
 				},
 				{
-					id: 'wine-3',
+					id: 3,
 					title: 'Claret A La Fraîche',
 					producer: 'Pauline Lapierre',
 					description:
@@ -50,21 +50,21 @@ export const data = {
 			price: '',
 			items: [
 				{
-					id: 'lunch-1',
+					id: 1,
 					title: 'Klassiska köttbullar',
 					description:
 						'Pessgurka, rårörda lingon, gräddsås & potatispuré',
 					price: 165,
 				},
 				{
-					id: 'lunch-2',
+					id: 2,
 					title: 'Räksallad',
 					description:
 						'Handskalade räkor, ägg, gröna blad, krutonger, rädisor, tomat & citronmajonäs',
 					price: 165,
 				},
 				{
-					id: 'lunch-3',
+					id: 3,
 					title: 'Reuben sandwich',
 					description:
 						'Levainbröd, pastrami, lagrad ost, surkål, reubensås & pickles',
@@ -80,20 +80,20 @@ export const data = {
 			price: '',
 			items: [
 				{
-					id: 'always-1',
+					id: 1,
 					title: 'Toast Skagen',
 					description:
 						'Handskalade räkor, smörstekt levain från Två systrars bageri',
 					price: 235,
 				},
 				{
-					id: 'always-2',
+					id: 2,
 					title: 'Oxtartar',
 					description: 'Pepparrotskräm, jordärtskocka & pommes',
 					price: 235,
 				},
 				{
-					id: 'always-3',
+					id: 3,
 					title: 'Burrata sallad',
 					description:
 						'Burrata, kronärtskocka, tomater, variation av grönt',
@@ -109,26 +109,26 @@ export const data = {
 			price: '',
 			items: [
 				{
-					id: 'sweets-1',
+					id: 1,
 					title: 'Varm bulle med glass',
 					description:
 						'Ert val av av kanel eller vaniljbulle gräddas i ugn och toppas med en kula vaniljglass',
 					price: 80,
 				},
 				{
-					id: 'sweets-2',
+					id: 2,
 					title: 'Blåbärsruta',
 					description: 'Blåbärspudding & citronsmetana',
 					price: 40,
 				},
 				{
-					id: 'sweets-3',
+					id: 3,
 					title: 'Sorbet toppat med bubblor',
 					description: '',
 					price: 90,
 				},
 				{
-					id: 'sweets-4',
+					id: 4,
 					title: 'Glass i olika smaker',
 					description: 'Fråga om dagens smaker',
 					price: 45,
@@ -143,45 +143,45 @@ export const data = {
 			price: '',
 			items: [
 				{
-					id: 'snack-1',
+					id: 1,
 					title: 'Västerbotten krokett',
 					description: '',
 					price: 69,
 				},
 				{
-					id: 'snack-2',
+					id: 2,
 					title: 'Serrano krokett',
 					description: '',
 					price: 69,
 				},
 				{
-					id: 'snack-3',
+					id: 3,
 					title: 'Charkuterier',
 					description: '',
 					price: 69,
 				},
-				{ id: 'snack-4', title: 'Ostar', description: '', price: 69 },
-				{ id: 'snack-5', title: 'Oliver', description: '', price: 59 },
+				{ id: 4, title: 'Ostar', description: '', price: 69 },
+				{ id: 5, title: 'Oliver', description: '', price: 59 },
 				{
-					id: 'snack-6',
+					id: 6,
 					title: 'Cornichons med smetana & honung',
 					description: '',
 					price: 59,
 				},
 				{
-					id: 'snack-7',
+					id: 7,
 					title: 'Surdegsbröd, smör',
 					description: '',
 					price: 59,
 				},
 				{
-					id: 'snack-8',
+					id: 8,
 					title: 'Marconamandlar',
 					description: '',
 					price: 59,
 				},
 				{
-					id: 'snack-9',
+					id: 9,
 					title: 'Chips med havssalt',
 					description: '',
 					price: 39,
