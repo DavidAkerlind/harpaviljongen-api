@@ -22,7 +22,7 @@ export const menusController = (req, res) => {
 		res.json(
 			constructResObj(
 				400,
-				`No menus found with id '${req.params.menuId}`,
+				`No menus found with id:'${req.params.menuId}`,
 				false
 			)
 		);
@@ -38,7 +38,7 @@ export const deleteMenu = (req, res) => {
 		res.json(
 			constructResObj(
 				200,
-				`Menu with id '${menuId}' deleted successfully`,
+				`Menu with id:'${menuId}' deleted successfully`,
 				true,
 				data.menus
 			)
@@ -72,7 +72,7 @@ export const updateMenu = (req, res) => {
 			res.json(
 				constructResObj(
 					200,
-					`Field '${field}' in menu '${menuId}' updated successfully`,
+					`Field:'${field}' in menu:'${menuId}' updated successfully`,
 					true,
 					menu
 				)
@@ -88,7 +88,7 @@ export const updateMenu = (req, res) => {
 		res.json(
 			constructResObj(
 				400,
-				`Invalid field '${field}', allowed fields: '${allowedFields}'`,
+				`Invalid field:'${field}', allowed fields: '${allowedFields}'`,
 				false
 			)
 		);
@@ -110,7 +110,7 @@ export const updateMenuItem = (req, res) => {
 				res.json(
 					constructResObj(
 						200,
-						`Field '${field}' in item '${itemId}' in menu '${menuId}' updated successfully`,
+						`Field:'${field}' in item:'${itemId}' in menu:'${menuId}' updated successfully`,
 						true,
 						item
 					)
@@ -120,7 +120,7 @@ export const updateMenuItem = (req, res) => {
 				res.json(
 					constructResObj(
 						400,
-						`No menus found with id:${menuId}`,
+						`No item found with id:${itemId} in menu:${menuId}`,
 						false
 					)
 				);
@@ -136,7 +136,7 @@ export const updateMenuItem = (req, res) => {
 		res.json(
 			constructResObj(
 				400,
-				`Invalid field '${field}', allowed fields: '${allowedFields}'`,
+				`Invalid field:'${field}', allowed fields: '${allowedFields}'`,
 				false
 			)
 		);
