@@ -18,6 +18,7 @@ export const data = {
 			items: [
 				{
 					id: 1,
+					active: true,
 					title: 'Rioja Blanco Las Laventadas',
 					producer: 'Javier San Pedro',
 					description:
@@ -26,6 +27,7 @@ export const data = {
 				},
 				{
 					id: 2,
+					active: true,
 					title: 'Lux Fortis Cabernet Sauvignon',
 					producer: 'Famille Fabre',
 					description:
@@ -34,6 +36,7 @@ export const data = {
 				},
 				{
 					id: 3,
+					active: true,
 					title: 'Claret A La Fraîche',
 					producer: 'Pauline Lapierre',
 					description:
@@ -51,6 +54,7 @@ export const data = {
 			items: [
 				{
 					id: 1,
+					active: true,
 					title: 'Klassiska köttbullar',
 					description:
 						'Pessgurka, rårörda lingon, gräddsås & potatispuré',
@@ -58,6 +62,7 @@ export const data = {
 				},
 				{
 					id: 2,
+					active: true,
 					title: 'Räksallad',
 					description:
 						'Handskalade räkor, ägg, gröna blad, krutonger, rädisor, tomat & citronmajonäs',
@@ -65,6 +70,7 @@ export const data = {
 				},
 				{
 					id: 3,
+					active: true,
 					title: 'Reuben sandwich',
 					description:
 						'Levainbröd, pastrami, lagrad ost, surkål, reubensås & pickles',
@@ -81,6 +87,7 @@ export const data = {
 			items: [
 				{
 					id: 1,
+					active: true,
 					title: 'Toast Skagen',
 					description:
 						'Handskalade räkor, smörstekt levain från Två systrars bageri',
@@ -88,12 +95,14 @@ export const data = {
 				},
 				{
 					id: 2,
+					active: true,
 					title: 'Oxtartar',
 					description: 'Pepparrotskräm, jordärtskocka & pommes',
 					price: 235,
 				},
 				{
 					id: 3,
+					active: true,
 					title: 'Burrata sallad',
 					description:
 						'Burrata, kronärtskocka, tomater, variation av grönt',
@@ -110,6 +119,7 @@ export const data = {
 			items: [
 				{
 					id: 1,
+					active: true,
 					title: 'Varm bulle med glass',
 					description:
 						'Ert val av av kanel eller vaniljbulle gräddas i ugn och toppas med en kula vaniljglass',
@@ -117,18 +127,21 @@ export const data = {
 				},
 				{
 					id: 2,
+					active: true,
 					title: 'Blåbärsruta',
 					description: 'Blåbärspudding & citronsmetana',
 					price: 40,
 				},
 				{
 					id: 3,
+					active: true,
 					title: 'Sorbet toppat med bubblor',
 					description: '',
 					price: 90,
 				},
 				{
 					id: 4,
+					active: true,
 					title: 'Glass i olika smaker',
 					description: 'Fråga om dagens smaker',
 					price: 45,
@@ -144,44 +157,63 @@ export const data = {
 			items: [
 				{
 					id: 1,
+					active: true,
 					title: 'Västerbotten krokett',
 					description: '',
 					price: 69,
 				},
 				{
 					id: 2,
+					active: true,
 					title: 'Serrano krokett',
 					description: '',
 					price: 69,
 				},
 				{
 					id: 3,
+					active: true,
 					title: 'Charkuterier',
 					description: '',
 					price: 69,
 				},
-				{ id: 4, title: 'Ostar', description: '', price: 69 },
-				{ id: 5, title: 'Oliver', description: '', price: 59 },
+				{
+					id: 4,
+					active: true,
+					title: 'Ostar',
+					description: '',
+					price: 69,
+				},
+				{
+					id: 5,
+					active: true,
+					title: 'Oliver',
+					description: '',
+					price: 59,
+				},
 				{
 					id: 6,
+					active: true,
 					title: 'Cornichons med smetana & honung',
 					description: '',
 					price: 59,
 				},
 				{
 					id: 7,
+					active: true,
 					title: 'Surdegsbröd, smör',
 					description: '',
 					price: 59,
 				},
 				{
 					id: 8,
+					active: true,
 					title: 'Marconamandlar',
 					description: '',
 					price: 59,
 				},
 				{
 					id: 9,
+					active: true,
 					title: 'Chips med havssalt',
 					description: '',
 					price: 39,
@@ -197,36 +229,42 @@ export const data = {
 			items: [
 				{
 					id: 1,
+					active: true,
 					title: 'Prosseco',
 					description: '',
 					price: 120,
 				},
 				{
 					id: 2,
+					active: true,
 					title: 'Deutz Classic',
 					description: '',
 					price: 150,
 				},
 				{
 					id: 3,
+					active: true,
 					title: 'Deutz 2018',
 					description: '',
 					price: 200,
 				},
 				{
 					id: 4,
+					active: true,
 					title: 'Deutz Rosé',
 					description: '',
 					price: 200,
 				},
 				{
 					id: 5,
+					active: true,
 					title: 'Amour',
 					description: '',
 					price: 350,
 				},
 				{
 					id: 6,
+					active: true,
 					title: 'Amour Rosé',
 					description: '',
 					price: 375,
@@ -242,18 +280,21 @@ export const data = {
 			items: [
 				{
 					id: 1,
+					active: true,
 					title: 'Tosterup Sprits',
 					description: '',
 					price: 150,
 				},
 				{
 					id: 2,
+					active: true,
 					title: 'Negroni',
 					description: '',
 					price: 150,
 				},
 				{
 					id: 3,
+					active: true,
 					title: 'Dry martini',
 					description: '',
 					price: 150,
@@ -269,12 +310,14 @@ export const data = {
 			items: [
 				{
 					id: 1,
+					active: true,
 					title: 'Hof',
 					description: '',
 					price: 75,
 				},
 				{
 					id: 2,
+					active: true,
 					title: '1664 Blanc',
 					description: '',
 					price: 80,
@@ -282,6 +325,7 @@ export const data = {
 
 				{
 					id: 3,
+					active: true,
 					title: 'Norrlandsljus',
 					description: '',
 					price: 80,

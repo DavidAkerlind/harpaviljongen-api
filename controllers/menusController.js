@@ -99,7 +99,7 @@ export const updateMenuItem = (req, res) => {
 	const { menuId, itemId, field } = req.params;
 	const { value } = req.body;
 
-	const allowedFields = ['title', 'description', 'price'];
+	const allowedFields = ['title', 'description', 'price', 'active'];
 
 	if (allowedFields.includes(field)) {
 		const menu = data.menus.find((m) => m.id === menuId);
