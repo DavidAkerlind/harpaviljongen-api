@@ -10,7 +10,7 @@ export const data = {
 	],
 	menus: [
 		{
-			id: 'weekly-wine',
+			id: 'menu-wine',
 			title: 'VECKANS VINER',
 			description: '',
 			type: 'wine',
@@ -43,7 +43,7 @@ export const data = {
 			],
 		},
 		{
-			id: 'weekly-lunch',
+			id: 'menu-lunch',
 			title: 'VECKANS LUNCH',
 			description: 'Serveras tisdag till söndag mellan 11:00 och 15:00',
 			type: 'lunch',
