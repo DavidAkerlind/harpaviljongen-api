@@ -1,15 +1,21 @@
 import express from 'express';
 import cors from 'cors';
+import dotenv from 'dotenv';
+import { config } from 'dotenv';
+import bodyParser from 'body-parser';
 import { fallbackController } from './controllers/fallbackController.js';
 import { menuRouter } from './routes/menuRouter.js';
 import { openingHoursRouter } from './routes/openingHoursRouter.js';
 import { allDataRouter } from './routes/allDataRouter.js';
 
+config();
+
 const app = express();
-const PORT = 7000;
+const PORT = process.env.PORT || 5000;
 
 //  ===== Middlewares =====
 
+app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
 
