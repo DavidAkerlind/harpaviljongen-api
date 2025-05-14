@@ -18,7 +18,7 @@ menuRouter.delete('/:menuId', deleteMenu); // Ex: DELETE /api/menus/weekly-wine 
 
 // ==== PUT ====
 menuRouter.put('/:menuId/:field', updateMenu); // Ex: PUT /api/menus/menu-always/title med en body på { "value": "nyttVärde"}
-menuRouter.put('/:menuId/:itemId/:field', updateMenuItem);
+menuRouter.put('/:menuId/:itemId/:field', updateMenuItem); // Ex: PUT /api/menus/menu-always/1/title med en body på { "value": "nyttVärde"} 	const allowedFields = ['title', 'description', 'price', 'active'];
 
 // ==== FALLBACK ====
 menuRouter.use(fallbackController);
