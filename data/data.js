@@ -1,12 +1,40 @@
 export const data = {
 	openingHours: [
-		{ day: 'Monday', hours: { from: null, to: null } },
-		{ day: 'Tuesday', hours: { from: '11:00', to: 'sent' } },
-		{ day: 'Wednesday', hours: { from: '11:00', to: 'sent' } },
-		{ day: 'Thursday', hours: { from: '11:00', to: 'sent' } },
-		{ day: 'Friday', hours: { from: '11:00', to: 'sent' } },
-		{ day: 'Saturday', hours: { from: '11:00', to: 'sent' } },
-		{ day: 'Sunday', hours: { from: '11:00', to: 'sent' } },
+		{
+			day: 'Monday',
+			hours: { from: null, to: null },
+			updatedAt: '2025-05-15T11:31:11',
+		},
+		{
+			day: 'Tuesday',
+			hours: { from: '11:00', to: 'sent' },
+			updatedAt: '2025-05-15T11:31:11',
+		},
+		{
+			day: 'Wednesday',
+			hours: { from: '11:00', to: 'sent' },
+			updatedAt: '2025-05-15T11:31:11',
+		},
+		{
+			day: 'Thursday',
+			hours: { from: '11:00', to: 'sent' },
+			updatedAt: '2025-05-15T11:31:11',
+		},
+		{
+			day: 'Friday',
+			hours: { from: '11:00', to: 'sent' },
+			updatedAt: '2025-05-15T11:31:11',
+		},
+		{
+			day: 'Saturday',
+			hours: { from: '11:00', to: 'sent' },
+			updatedAt: '2025-05-15T11:31:11',
+		},
+		{
+			day: 'Sunday',
+			hours: { from: '11:00', to: 'sent' },
+			updatedAt: '2025-05-15T11:31:11',
+		},
 	],
 	menus: [
 		{
@@ -15,6 +43,7 @@ export const data = {
 			description: '',
 			type: 'wine',
 			price: 165,
+			updatedAt: '2025-05-15T11:31:11',
 			items: [
 				{
 					id: 1,
@@ -24,6 +53,7 @@ export const data = {
 					description:
 						'Friskt vin med smak av stenfrukter och florala inslag. Perfekt till charkbrickan eller vår magiska Toast Skagen.',
 					price: '',
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 2,
@@ -33,6 +63,7 @@ export const data = {
 					description:
 						'Smak av mörk frukt och kryddiga toner med silkeslena tanniner. Paras gärna med helgens hedersgäst: Steak Minute.',
 					price: '',
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 3,
@@ -42,6 +73,7 @@ export const data = {
 					description:
 						'Josigt och fräscht med smak av röda frukter och bär. Perfekt att drickas sval i solen och funkar utmärkt med vår Oxtartar.',
 					price: '',
+					updatedAt: '2025-05-15T11:31:11',
 				},
 			],
 		},
@@ -51,6 +83,7 @@ export const data = {
 			description: 'Serveras tisdag till söndag mellan 11:00 och 15:00',
 			type: 'lunch',
 			price: '',
+			updatedAt: '2025-05-15T11:31:11',
 			items: [
 				{
 					id: 1,
@@ -59,6 +92,7 @@ export const data = {
 					description:
 						'Pessgurka, rårörda lingon, gräddsås & potatispuré',
 					price: 165,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 2,
@@ -67,6 +101,7 @@ export const data = {
 					description:
 						'Handskalade räkor, ägg, gröna blad, krutonger, rädisor, tomat & citronmajonäs',
 					price: 165,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 3,
@@ -75,6 +110,7 @@ export const data = {
 					description:
 						'Levainbröd, pastrami, lagrad ost, surkål, reubensås & pickles',
 					price: 165,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 			],
 		},
@@ -84,6 +120,7 @@ export const data = {
 			description: '',
 			type: 'all',
 			price: '',
+			updatedAt: '2025-05-15T11:31:11',
 			items: [
 				{
 					id: 1,
@@ -92,6 +129,7 @@ export const data = {
 					description:
 						'Handskalade räkor, smörstekt levain från Två systrars bageri',
 					price: 235,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 2,
@@ -99,6 +137,7 @@ export const data = {
 					title: 'Oxtartar',
 					description: 'Pepparrotskräm, jordärtskocka & pommes',
 					price: 235,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 3,
@@ -107,6 +146,7 @@ export const data = {
 					description:
 						'Burrata, kronärtskocka, tomater, variation av grönt',
 					price: 225,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 			],
 		},
@@ -116,6 +156,7 @@ export const data = {
 			description: '',
 			type: 'sweets',
 			price: '',
+			updatedAt: '2025-05-15T11:31:11',
 			items: [
 				{
 					id: 1,
@@ -124,6 +165,7 @@ export const data = {
 					description:
 						'Ert val av av kanel eller vaniljbulle gräddas i ugn och toppas med en kula vaniljglass',
 					price: 80,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 2,
@@ -131,6 +173,7 @@ export const data = {
 					title: 'Blåbärsruta',
 					description: 'Blåbärspudding & citronsmetana',
 					price: 40,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 3,
@@ -138,6 +181,7 @@ export const data = {
 					title: 'Sorbet toppat med bubblor',
 					description: '',
 					price: 90,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 4,
@@ -145,6 +189,7 @@ export const data = {
 					title: 'Glass i olika smaker',
 					description: 'Fråga om dagens smaker',
 					price: 45,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 			],
 		},
@@ -154,6 +199,7 @@ export const data = {
 			description: '',
 			type: 'small snack',
 			price: '',
+			updatedAt: '2025-05-15T11:31:11',
 			items: [
 				{
 					id: 1,
@@ -161,6 +207,7 @@ export const data = {
 					title: 'Västerbotten krokett',
 					description: '',
 					price: 69,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 2,
@@ -168,6 +215,7 @@ export const data = {
 					title: 'Serrano krokett',
 					description: '',
 					price: 69,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 3,
@@ -175,6 +223,7 @@ export const data = {
 					title: 'Charkuterier',
 					description: '',
 					price: 69,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 4,
@@ -182,6 +231,7 @@ export const data = {
 					title: 'Ostar',
 					description: '',
 					price: 69,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 5,
@@ -189,6 +239,7 @@ export const data = {
 					title: 'Oliver',
 					description: '',
 					price: 59,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 6,
@@ -196,6 +247,7 @@ export const data = {
 					title: 'Cornichons med smetana & honung',
 					description: '',
 					price: 59,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 7,
@@ -203,6 +255,7 @@ export const data = {
 					title: 'Surdegsbröd, smör',
 					description: '',
 					price: 59,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 8,
@@ -210,6 +263,7 @@ export const data = {
 					title: 'Marconamandlar',
 					description: '',
 					price: 59,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 9,
@@ -217,6 +271,7 @@ export const data = {
 					title: 'Chips med havssalt',
 					description: '',
 					price: 39,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 			],
 		},
@@ -226,6 +281,7 @@ export const data = {
 			description: '',
 			type: 'small',
 			price: '',
+			updatedAt: '2025-05-15T11:31:11',
 			items: [
 				{
 					id: 1,
@@ -233,6 +289,7 @@ export const data = {
 					title: 'Prosseco',
 					description: '',
 					price: 120,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 2,
@@ -240,6 +297,7 @@ export const data = {
 					title: 'Deutz Classic',
 					description: '',
 					price: 150,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 3,
@@ -247,6 +305,7 @@ export const data = {
 					title: 'Deutz 2018',
 					description: '',
 					price: 200,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 4,
@@ -254,6 +313,7 @@ export const data = {
 					title: 'Deutz Rosé',
 					description: '',
 					price: 200,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 5,
@@ -261,6 +321,7 @@ export const data = {
 					title: 'Amour',
 					description: '',
 					price: 350,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 6,
@@ -268,6 +329,7 @@ export const data = {
 					title: 'Amour Rosé',
 					description: '',
 					price: 375,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 			],
 		},
@@ -277,6 +339,7 @@ export const data = {
 			description: '',
 			type: 'small',
 			price: '',
+			updatedAt: '2025-05-15T11:31:11',
 			items: [
 				{
 					id: 1,
@@ -284,6 +347,7 @@ export const data = {
 					title: 'Tosterup Sprits',
 					description: '',
 					price: 150,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 2,
@@ -291,6 +355,7 @@ export const data = {
 					title: 'Negroni',
 					description: '',
 					price: 150,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 3,
@@ -298,6 +363,7 @@ export const data = {
 					title: 'Dry martini',
 					description: '',
 					price: 150,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 			],
 		},
@@ -307,6 +373,7 @@ export const data = {
 			description: '',
 			type: 'small',
 			price: '',
+			updatedAt: '2025-05-15T11:31:11',
 			items: [
 				{
 					id: 1,
@@ -314,6 +381,7 @@ export const data = {
 					title: 'Hof',
 					description: '',
 					price: 75,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 				{
 					id: 2,
@@ -321,6 +389,7 @@ export const data = {
 					title: '1664 Blanc',
 					description: '',
 					price: 80,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 
 				{
@@ -329,6 +398,7 @@ export const data = {
 					title: 'Norrlandsljus',
 					description: '',
 					price: 80,
+					updatedAt: '2025-05-15T11:31:11',
 				},
 			],
 		},

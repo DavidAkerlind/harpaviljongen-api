@@ -1,5 +1,7 @@
 import { data } from '../data/data.js';
 
 export const doesMenuIdExist = (id) => {
-	return data.menus.some((menu) => menu.id === id);
+	if (id) {
+		return data.menus.find((m) => m.id === id);
+	} else return false;
 };

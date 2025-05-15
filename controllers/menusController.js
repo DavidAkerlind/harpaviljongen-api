@@ -2,6 +2,7 @@ import { data } from '../data/data.js';
 import { getMenuFromParams } from '../functions/getMenuFromParams.js';
 import { constructResObj } from '../utils/constructResObj.js';
 import { doesMenuIdExist } from '../utils/doesMenuIdExist.js';
+import { getSwedishFormattedDate } from '../utils/getSwedishFormattedDate.js';
 
 // This is for get request like "/api/menus/:menuID" or "/api/menus"
 
@@ -31,7 +32,8 @@ export const menusController = (req, res) => {
 
 export const deleteMenu = (req, res) => {
 	const { menuId } = req.params;
-	if (doesMenuIdExist(menuId)) {
+	const menu = doesMenuIdExist(menuId);
+	if (menu) {
 		const filteredData = data.menus.filter((i) => i.id !== menuId);
 		data.menus = [];
 		data.menus.push(...filteredData);
@@ -40,7 +42,7 @@ export const deleteMenu = (req, res) => {
 				200,
 				`Menu with id:'${menuId}' deleted successfully`,
 				true,
-				data.menus
+				menu
 			)
 		);
 	} else {
@@ -69,6 +71,7 @@ export const updateMenu = (req, res) => {
 		const menu = data.menus.find((m) => m.id === menuId);
 		if (menu) {
 			menu[field] = value;
+			menu.updatedAt = getSwedishFormattedDate();
 			res.json(
 				constructResObj(
 					200,
@@ -107,6 +110,8 @@ export const updateMenuItem = (req, res) => {
 			const item = menu.items.find((i) => i.id === parseInt(itemId));
 			if (item) {
 				item[field] = value;
+				item.updatedAt = getSwedishFormattedDate();
+				menu.updatedAt = getSwedishFormattedDate();
 				res.json(
 					constructResObj(
 						200,
