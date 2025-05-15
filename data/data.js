@@ -1,37 +1,37 @@
 export const data = {
 	openingHours: [
 		{
-			day: 'Monday',
-			hours: { from: null, to: null },
+			day: 'Måndag',
+			hours: { from: '', to: '' },
 			updatedAt: '2025-05-15T11:31:11',
 		},
 		{
-			day: 'Tuesday',
+			day: 'Tisdag',
 			hours: { from: '11:00', to: 'sent' },
 			updatedAt: '2025-05-15T11:31:11',
 		},
 		{
-			day: 'Wednesday',
+			day: 'Onsdag',
 			hours: { from: '11:00', to: 'sent' },
 			updatedAt: '2025-05-15T11:31:11',
 		},
 		{
-			day: 'Thursday',
+			day: 'Torsdag',
 			hours: { from: '11:00', to: 'sent' },
 			updatedAt: '2025-05-15T11:31:11',
 		},
 		{
-			day: 'Friday',
+			day: 'Fredag',
 			hours: { from: '11:00', to: 'sent' },
 			updatedAt: '2025-05-15T11:31:11',
 		},
 		{
-			day: 'Saturday',
+			day: 'Lördag',
 			hours: { from: '11:00', to: 'sent' },
 			updatedAt: '2025-05-15T11:31:11',
 		},
 		{
-			day: 'Sunday',
+			day: 'Söndag',
 			hours: { from: '11:00', to: 'sent' },
 			updatedAt: '2025-05-15T11:31:11',
 		},

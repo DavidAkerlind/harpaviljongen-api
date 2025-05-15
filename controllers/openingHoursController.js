@@ -1,5 +1,7 @@
 import { data } from '../data/data.js';
 import { constructResObj } from '../utils/constructResObj.js';
+import { isValidTimeFormat } from '../utils/isValidTimeFormat.js';
+import { getSwedishFormattedDate } from '../utils/getSwedishFormattedDate.js';
 
 // This is for get request like "/api/opening-hours"
 
@@ -13,4 +15,119 @@ export const openingHoursController = (req, res) => {
 			filteredData
 		)
 	);
+};
+
+export const updateOpeningHoursByDay = (req, res) => {
+	const day = req.params.day?.toLowerCase();
+	if (req.body) {
+		const { from, to } = req.body;
+
+		if (isValidTimeFormat(from) && isValidTimeFormat(to)) {
+			const dayToUpdate = data.openingHours.find(
+				(d) => d.day.toLowerCase() === day
+			);
+			if (dayToUpdate) {
+				if (from !== undefined) dayToUpdate.hours.from = from;
+				if (to !== undefined) dayToUpdate.hours.to = to;
+				dayToUpdate.updatedAt = getSwedishFormattedDate();
+				res.status(201).json(
+					constructResObj(
+						201,
+						`Opening hours for day:${dayToUpdate.day} updated successfully`,
+						true,
+						dayToUpdate
+					)
+				);
+			} else {
+				res.status(400);
+				res.json(constructResObj(400, `Day:'${day}' not found`, false));
+			}
+		} else {
+			res.status(400);
+			res.json(
+				constructResObj(
+					400,
+					'Invalid time format. Use HH:MM format (ex: 09:00)',
+					false
+				)
+			);
+		}
+	} else {
+		res.status(400);
+		res.json(
+			constructResObj(
+				400,
+				'Body with { from: new value, to: new value } required',
+				false
+			)
+		);
+	}
+};
+
+export const updateOpeningHoursAll = (req, res) => {
+	if (!req.body || !Array.isArray(req.body)) {
+		return res
+			.status(400)
+			.json(
+				constructResObj(
+					400,
+					'Body must be an array of opening hours',
+					false
+				)
+			);
+	}
+
+	const newOpeningHours = req.body;
+
+	// Validate array length
+	if (newOpeningHours.length !== 7) {
+		return res
+			.status(400)
+			.json(
+				constructResObj(
+					400,
+					'Must provide exactly 7 days of opening hours',
+					false
+				)
+			);
+	}
+
+	// Validate each day's data structure and time format
+	const isValid = newOpeningHours.every((day) => {
+		const hasValidStructure =
+			day.day && day.hours && 'from' in day.hours && 'to' in day.hours;
+		const hasValidTimes =
+			isValidTimeFormat(day.hours.from) &&
+			isValidTimeFormat(day.hours.to);
+		return hasValidStructure && hasValidTimes;
+	});
+
+	if (!isValid) {
+		return res
+			.status(400)
+			.json(
+				constructResObj(
+					400,
+					'Invalid data structure or time format. Each day must have day and hours.{from,to} in HH:MM format',
+					false
+				)
+			);
+	}
+
+	// Update all days
+	data.openingHours = newOpeningHours.map((day) => ({
+		...day,
+		updatedAt: getSwedishFormattedDate(),
+	}));
+
+	return res
+		.status(200)
+		.json(
+			constructResObj(
+				200,
+				'All opening hours updated successfully',
+				true,
+				data.openingHours
+			)
+		);
 };
