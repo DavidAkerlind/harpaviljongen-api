@@ -117,17 +117,16 @@ export const updateOpeningHoursAll = (req, res) => {
 	// Update all days
 	data.openingHours = newOpeningHours.map((day) => ({
 		...day,
+		day: day.day.charAt(0).toUpperCase() + day.day.slice(1).toLowerCase(),
 		updatedAt: getSwedishFormattedDate(),
 	}));
 
-	return res
-		.status(200)
-		.json(
-			constructResObj(
-				200,
-				'All opening hours updated successfully',
-				true,
-				data.openingHours
-			)
-		);
+	return res.json(
+		constructResObj(
+			200,
+			'All opening hours updated successfully',
+			true,
+			data.openingHours
+		)
+	);
 };
