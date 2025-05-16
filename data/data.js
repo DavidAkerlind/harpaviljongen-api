@@ -334,10 +334,10 @@ export const data = {
 			],
 		},
 		{
-			id: 'menu-coctails',
+			id: 'menu-cocktails',
 			title: 'DRINKAR',
 			description: '',
-			type: 'small coctails',
+			type: 'small cocktails',
 			price: '',
 			updatedAt: '2025-05-15T11:31:11',
 			items: [
