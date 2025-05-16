@@ -279,7 +279,7 @@ export const data = {
 			id: 'menu-bubbels',
 			title: 'BUBBLOR',
 			description: '',
-			type: 'small',
+			type: 'small bubbels',
 			price: '',
 			updatedAt: '2025-05-15T11:31:11',
 			items: [
@@ -337,7 +337,7 @@ export const data = {
 			id: 'menu-coctails',
 			title: 'DRINKAR',
 			description: '',
-			type: 'small',
+			type: 'small coctails',
 			price: '',
 			updatedAt: '2025-05-15T11:31:11',
 			items: [
@@ -371,7 +371,7 @@ export const data = {
 			id: 'menu-beer',
 			title: 'ÖL',
 			description: '',
-			type: 'small',
+			type: 'small beer',
 			price: '',
 			updatedAt: '2025-05-15T11:31:11',
 			items: [
